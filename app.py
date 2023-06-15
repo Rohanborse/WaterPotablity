@@ -43,7 +43,7 @@ def main():
        Organic_carbon, Trihalomethanes, Turbidity])
 
         prediction = predict(values)
-        if prediction[0]==1.0:
+        if prediction[0]==1:
           water = "Water IS POTABLE"
         else:
           water = "WATER IS NOT POTABLE"
