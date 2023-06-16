@@ -39,8 +39,8 @@ def main():
     Turbidity = st.number_input("Turbidity", min_value=0.0, step=0.1)
 
     if st.button("Predict"):
-        values = (ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
-       Organic_carbon, Trihalomethanes, Turbidity)
+        values = [[ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
+       Organic_carbon, Trihalomethanes, Turbidity]]
 
         prediction = predict(values)
         if prediction[0]==1:
