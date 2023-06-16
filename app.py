@@ -8,13 +8,13 @@ warnings.filterwarnings('ignore')
 model = pickle.load(open('water_potablity.pkl', 'rb'))
 
 
-def preprocess_input(ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
-       Organic_carbon, Trihalomethanes, Turbidity):
-    # Perform any preprocessing steps here
-    data = [[ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
-       Organic_carbon, Trihalomethanes, Turbidity]]
-    values = data
-    return values
+# def preprocess_input(ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
+#        Organic_carbon, Trihalomethanes, Turbidity):
+#     # Perform any preprocessing steps here
+#     data = [[ph, Hardness, Solids, Chloramines, Sulfate, Conductivity,
+#        Organic_carbon, Trihalomethanes, Turbidity]]
+#     values = data
+#     return values
 
 
 def predict(values):
